@@ -1,0 +1,238 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: calc(16px + (10 - 16) * (100vw - 320px) / (1920 - 320));
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+
+    background-color: $color-background;
+    font-family: $body-font-family;
+    color: $body-color;
+    font-size: $body-font-size;
+    font-weight: $body-font-weight;
+    line-height: $body-line-height;
+    letter-spacing: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+input,
+textarea,
+select,
+button {
+    font: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+picture {
+    line-height: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font-family;
+    line-height: $heading-line-height;
+    letter-spacing: $heading-letter-spacing;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: $h1-font-size;
+}
+
+h2 {
+    font-size: $h2-font-size;
+}
+
+h3 {
+    font-size: $h3-font-size;
+}
+
+h4 {
+    font-size: $h4-font-size;
+}
+
+h5 {
+    font-size: $h5-font-size;
+}
+
+h6 {
+    font-size: $h6-font-size;
+}
+
+a {
+    color: $color-black;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+a,
+button {
+    transition: 0.2s ease;
+}
+
+button {
+    border-radius: $button-border-radius;
+    cursor: pointer;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+ol {
+    padding-left: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+// input {
+//     width: $input-width;
+//     background-color: $input-background-color;
+//     font-size: $input-font-size;
+//     padding: $input-padding;
+//     line-height: $input-line-height;
+//     border: $input-border;
+//     border-radius: $input-border-radius;
+//     box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+//     transition: 0.2s ease;
+
+//     &:hover,
+//     &:focus {
+//         border-color: $input-border-color-hover;
+//         background-color: $input-background-color-hover;
+//     }
+
+//     &::placeholder {
+//         color: $input-placeholder-color;
+//     }
+// }
+
+// textarea {
+//     padding: 14px 20px 13px;
+//     width: $input-width;
+//     background-color: $input-background-color;
+//     font-size: $input-font-size;
+//     resize: vertical;
+//     line-height: $input-line-height;
+//     border: $input-border;
+//     border-radius: $input-border-radius;
+
+//     &:hover,
+//     &:focus {
+//         border-color: $input-border-color-hover;
+//         background-color: $input-background-color-hover;
+//     }
+
+//     &::placeholder {
+//         color: $input-placeholder-color;
+//     }
+// }
+
+// input[type="checkbox"] {
+//     @include visually-hidden;
+// }
+
+// input[type="checkbox"] + label {
+//     display: block;
+//     width: 28px;
+//     height: 28px;
+//     border-radius: 5px;
+//     border: 1px solid #cbd4ea;
+//     transition: 0.2s ease;
+//     transition-property: border-color, background-color;
+// }
+
+// input[type="checkbox"]:hover + label,
+// input[type="checkbox"]:focus + label {
+//     border-color: $main-color;
+// }
+
+// input[type="checkbox"]:checked + label {
+//     background-image: url("./../../img/svg/tick-blue.svg");
+//     background-repeat: no-repeat;
+//     background-position: center;
+// }
+
+// input[type="checkbox"]:active + label {
+//     background-color: $light-gray;
+// }
+
+// input[type="checkbox"].input-invalid + label {
+//     border-color: #f9525c;
+// }
+
+.hide {
+    display: none;
+}
+
+.hide-text {
+    font-size: 0;
+}
+
+.lock {
+    overflow: hidden;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
+}

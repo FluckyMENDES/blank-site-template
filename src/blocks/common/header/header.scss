@@ -1,0 +1,10 @@
+.header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: $color-main;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,70 @@
+.btn {
+    position: relative;
+    display: inline-flex;
+    padding: 0.4em 0.7em;
+    font-size: $body-font-size;
+    line-height: 1;
+    font-weight: 400;
+    color: $color-black;
+    border: 1px solid $color-medium-gray;
+
+    &--wide {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    &--main {
+        background-color: $color-main;
+        color: $color-white;
+        border-color: transparent;
+
+        &:hover {
+            background-color: darken($color: $color-main, $amount: 5%);
+        }
+
+        &:active {
+            background-color: darken($color: $color-main, $amount: 10%);
+        }
+    }
+
+    &--alt {
+        background-color: $color-alt;
+        color: $color-white;
+        border-color: transparent;
+        &:hover {
+            background-color: darken($color: $color-alt, $amount: 5%);
+        }
+
+        &:active {
+            background-color: darken($color: $color-alt, $amount: 10%);
+        }
+    }
+
+    &--res {
+        background-color: $color-res;
+        border-color: transparent;
+
+        &:hover {
+            background-color: darken($color: $color-res, $amount: 5%);
+        }
+
+        &:active {
+            background-color: darken($color: $color-res, $amount: 10%);
+        }
+    }
+
+    &.disabled {
+        cursor: default;
+        color: $color-light-gray;
+        border-color: $color-light-gray;
+
+        &:hover {
+            background-color: initial;
+        }
+
+        &:active {
+            background-color: initial;
+        }
+    }
+}

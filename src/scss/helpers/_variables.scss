@@ -1,0 +1,180 @@
+$container-width: 1200px;
+$side-paddings: 15px;
+$mobile-width: 768px;
+
+$color-main: #0e79b2;
+$color-alt: #bf1363;
+$color-res: #f39237;
+$color-green: #37bb0f;
+$color-red: #d60505;
+$color-white: #fbfef9;
+$color-black: #191923;
+$color-light-gray: #9e9e9e;
+$color-medium-gray: #606060;
+$color-dark-gray: #333333;
+$color-background: $color-white;
+
+$body-font-family: "Roboto", "Arial", sans-serif;
+$body-font-size: 16px;
+$body-font-weight: 400;
+$body-color: $color-black;
+$body-line-height: 1.5;
+
+$heading-font-family: $body-font-family;
+$heading-line-height: 1.05;
+$heading-letter-spacing: 0.03px;
+$h1-font-size: calc(24px + (32 - 24) * (100vw - 320px) / (1920 - 320));
+$h2-font-size: calc(22px + (28 - 22) * (100vw - 320px) / (1920 - 320));
+$h3-font-size: calc(20px + (24 - 20) * (100vw - 320px) / (1920 - 320));
+$h4-font-size: calc(18px + (20 - 18) * (100vw - 320px) / (1920 - 320));
+$h5-font-size: calc(16px + (18 - 16) * (100vw - 320px) / (1920 - 320));
+$h6-font-size: 16px;
+
+$button-border-radius: 0.3125em; // = 5px при 16px
+
+// :root {
+//     // Container settings
+
+//     --container-width: 1200px;
+//     --side-padding: 15px;
+//     --mobile-width: 768px;
+
+//     --color-main: #0e79b2;
+//     --color-alt: #bf1363;
+//     --color-res: #f39237;
+//     --color-green: #37bb0f;
+//     --color-red: #d60505;
+//     --color-white: #fbfef9;
+//     --color-black: #191923;
+//     --color-light-gray: #9e9e9e;
+//     --color-medium-gray: #606060;
+//     --color-dark-gray: #333333;
+//     --color-background: var(--color-white);
+// }
+
+// body {
+//     --body-font-family: "Roboto", "Arial", sans-serif;
+//     --body-font-size: 16px;
+//     --body-font-weight: 400;
+//     --body-color: var(--color-black);
+//     --body-line-height: 1.5;
+// }
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//     --heading-font-family: var(--body-font-family);
+//     --heading-line-height: 1.05;
+//     --heading-letter-spacing: 0.03px;
+// }
+
+// h1 {
+//     --h1-font-size: calc(24px + (32 - 24) * (100vw - 320px) / (1920 - 320));
+// }
+
+// h2 {
+//     --h2-font-size: calc(22px + (28 - 22) * (100vw - 320px) / (1920 - 320));
+// }
+
+// h3 {
+//     --h3-font-size: calc(20px + (24 - 20) * (100vw - 320px) / (1920 - 320));
+// }
+
+// h4 {
+//     --h4-font-size: calc(18px + (20 - 18) * (100vw - 320px) / (1920 - 320));
+// }
+
+// h5 {
+//     --h5-font-size: calc(16px + (18 - 16) * (100vw - 320px) / (1920 - 320));
+// }
+
+// h6 {
+//     --h6-font-size: 16px;
+// }
+
+// button {
+//     --border-radius: 4px;
+// }
+
+// 1. Global
+// ---------
+
+// $main-color: #649347;
+// $secondary-color: #e0581d;
+// $reserve-color: #fbfdff;
+// $success-color: #37bb0f;
+// $warning-color: #ffae00;
+// $alert-color: #d60505;
+// $light-gray: #7a92a0;
+// $medium-gray: #858585;
+// $dark-gray: #222222;
+// $black: #333333;
+// $white: #fff;
+// $background-color: #f2f7fa;
+// $border-color: $main-color;
+// $section-padding-top: 90px;
+// $section-padding-bottom: 54px;
+
+// // 2. Typography
+// // -------------
+
+// $main-font: "Roboto", "Arial", sans-serif;
+// $secondary-font: "Roboto", "Arial", sans-serif;
+// $font-color: $black;
+// $font-weight: normal;
+// $font-size: 18px;
+// $desktop-font-size: 18px;
+// $line-height: 28px;
+// $heading-font: "Roboto", "Arial", sans-serif;
+// $heading-line-height: 1.1;
+// $heading-letter-spacing: 0.1px;
+// $h1-font-size: 46px;
+// $h2-font-size: 46px;
+// $h3-font-size: 40px;
+// $h4-font-size: 26px;
+// $h5-font-size: 18px;
+// $h6-font-size: 12px;
+
+// $small-font-color: $medium-gray;
+// $link-text-decoration: none;
+// $link-color: $font-color;
+// $link-color-visited: $link-color;
+// $link-color-hover: $link-color;
+// $link-color-active: $link-color;
+
+// // 3. Input
+// // ----------
+
+// $input-width: 100%;
+// $input-font-size: 16px;
+// $input-padding: 13px 35px 12px 60px;
+// $input-line-height: 150%;
+// $input-background-color: #f2f7fa;
+// $input-border-radius: 5px;
+// $input-border: 1px solid #c7d7e1;
+// $input-border-color-hover: #c7d7e1;
+// $input-background-color-hover: darken(#f2f7fa, 5%);
+// $input-placeholder-color: $medium-gray;
+
+// $checkbox-width: 16px;
+// $checkbox-height: 16px;
+// $checkbox-border: 2px solid $main-color;
+// $checkbox-background-color: transparent;
+// $checkbox-border-color-hover: darken($main-color, 10%);
+// $checkbox-background-color-hover: darken($main-color, 10%);
+
+// $radio-size: 50px;
+// $radio-border-radius: 50%;
+// $radio-border: $input-border;
+// $radio-background-color: $white;
+// $radio-border-color-hover: $input-border-color-hover;
+// $radio-background-color-hover: $input-background-color-hover;
+
+// // 4. Additional
+// // ----------
+
+// $animate-short: 0.2s all ease-in-out;
+// $animate-long: 1s all ease-in-out;
